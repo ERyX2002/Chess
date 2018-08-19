@@ -1,14 +1,14 @@
 class Pawn extends Piece{
   PVector startingPos;
-  PVector cPos;
+  
   boolean rotateable = false;
+  boolean multipliable = false;
   PVector firstStep = new PVector(0, 2);
   PVector movement = new PVector(0, 1);
   
-  Pawn(){
-     
+  Pawn(int team, PImage img, PVector p){
+     super(team, img, p);
   }
-  
   void makeMove(){
     
   }

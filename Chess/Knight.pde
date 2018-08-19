@@ -1,13 +1,11 @@
 class Knight extends Piece{
   PVector startingPos;
-  PVector cPos;
   boolean rotateable = true;
-  
+  boolean multipliable = false;
   PVector firstStep = null;
+  PVector movement = new PVector(1, 1);
   
-  PVector movement = new PVector(0, 1);
-  
-  Knight(){
-    
+  Knight(int team, PImage img, PVector p){
+     super(team, img, p);
   }
 }
